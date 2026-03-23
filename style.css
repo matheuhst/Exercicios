@@ -76,7 +76,7 @@ body {
 
 .nervoso {
   background: #ff0808;
-  animation: tremer 0.1s infinite;
+  animation: tremer 0.5s infinite;
 }
 
 @keyframes pular {
