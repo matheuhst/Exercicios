@@ -1,10 +1,10 @@
 .quadrado{
-    color: grey;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    position: relative;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feliz{
