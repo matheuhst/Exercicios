@@ -47,6 +47,6 @@ body {
   100% { transform: translateX(0); }
 }
 
-.personagem:hover {
+.quadrado:hover {
   background: red;
 }
