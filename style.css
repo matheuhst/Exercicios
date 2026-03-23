@@ -92,7 +92,3 @@ body {
   100% { transform: translateX(0); }
 }
 
-.quadrado:hover {
-  background: yellow;
-  animation: pular 0.6s infinite alternate;
-}
