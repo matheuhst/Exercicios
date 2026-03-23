@@ -19,15 +19,45 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.olho-direito{
-    border-radius: 50%;
-    color: white;
+.olho-direito, .olho-esquerdo {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
 }
-.olho-esquerdo{
-    border-radius: 50%;
-    color: white;
+
+.olho-esquerdo {
+  left: 30px;
+}
+
+.olho-direito {
+  right: 30px;
+}
+
+.quadrado.feliz .olho-direito,
+.quadrado.feliz .olho-esquerdo {
+  height: 20px;
+  background: black;
+}
+
+.quadrado.triste .olho-direito,
+.quadrado.triste .olho-esquerdo {
+  height: 10px;
+  background: black;
+  border-radius: 50px;
+}
+
+.quadrado.nervoso .olho-esquerdo {
+  transform: rotate(-20deg);
+}
+
+.quadrado.nervoso .olho-direito {
+  transform: rotate(20deg);
 }
 
 .boca{
