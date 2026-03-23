@@ -10,6 +10,18 @@ function mudar(estado) {
 
 let primeiraInteracao = true;
 
+let tempoInatividade;
+
+function iniciarTimer() {
+    // cancela o timer anterior
+    clearTimeout(tempoInatividade);
+
+    // cria um novo timer
+    tempoInatividade = setTimeout(() => {
+        mudar('triste');
+    }, 10000); // 10 segundos
+}
+
 const quadrado = document.querySelector('.quadrado');
 
 quadrado.addEventListener('mouseenter', () => {
@@ -19,4 +31,12 @@ quadrado.addEventListener('mouseenter', () => {
     } else {
         mudar('feliz');
     }
+
+    iniciarTimer();
 });
+
+quadrado.addEventListener('click', () => {
+    iniciarTimer();
+});
+
+iniciarTimer();
