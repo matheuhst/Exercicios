@@ -72,7 +72,7 @@ body {
 
 .triste {
   background: #74c0fc;
-  transform: translateY(10px);
+  animation: murchar 0.5s forwards;
 }
 
 .nervoso {
@@ -91,5 +91,14 @@ body {
   50% { transform: translateX(3px); }
   75% { transform: translateX(-3px); }
   100% { transform: translateX(0); }
+}
+
+@keyframes murchar {
+  0% {
+    transform: scaleY(1) scaleX(1) translateY(0);
+  }
+  100% {
+    transform: scaleY(0.6) scaleX(0.9) translateY(15px);
+  }
 }
 
