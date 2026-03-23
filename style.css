@@ -4,7 +4,7 @@ body {
   align-items: center;     
   height: 100vh;
   margin: 0;
-  background-color: grey;
+  background-color: #c7c7c7;
 }
 
 .container {
@@ -12,6 +12,7 @@ body {
 }
 
 .quadrado{
+    color: #808080;
     width: 150px;
     height: 150px;
     transition: 0.5s;
