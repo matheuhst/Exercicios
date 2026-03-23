@@ -12,7 +12,7 @@ body {
 }
 
 .quadrado{
-    color: #808080;
+    background-color: #808080;
     width: 150px;
     height: 150px;
     transition: 0.5s;
