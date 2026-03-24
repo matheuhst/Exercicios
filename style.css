@@ -7,6 +7,12 @@ body {
   background-color: #808080;
 }
 
+h3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+
 .container {
   text-align: center;
 }
