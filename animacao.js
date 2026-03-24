@@ -8,8 +8,6 @@ function mudar(estado) {
     quadrado.classList.add(estado);
 }
 
-let primeiraInteracao = true;
-
 let tempoInatividade;
 
 function iniciarTimer() {
@@ -25,12 +23,7 @@ function iniciarTimer() {
 const quadrado = document.querySelector('.quadrado');
 
 quadrado.addEventListener('mouseenter', () => {
-    if (primeiraInteracao) {
-        mudar('nervoso');
-        primeiraInteracao = false;
-    } else {
-        mudar('feliz');
-    }
+    mudar('feliz');
 
     iniciarTimer();
 });
